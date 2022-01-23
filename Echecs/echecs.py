@@ -120,7 +120,6 @@ print(colored.fg(255), end="")
 print(colored.bg(0), end="")
 
 print(" === Projet Tutoré: Jeu d'échecs ===")
-print("Samy BENSAID, Alexis NAIRI")
 print("====================================\n")
 
 customGame = (input("Voulez-vous faire une partie normale (n) ou une partie personnalisée (p) ?") == "p")
@@ -136,9 +135,9 @@ if customGame:
 	map = init.saisie_pieces(whitePieces, blackPieces)
 
 else:
-	print("Partie normale.")
+	print("Partie normale.Pour entrer un mouvement, veuillez entrer la position de départ suivie de celle d'arrivée exemple : e2e4")
 	map = init.posit()
 
 print("Commencement de la partie. 'q' pour quitter.")
-sleep(1)
+sleep(5)
 partie(map, twoPlayers)
