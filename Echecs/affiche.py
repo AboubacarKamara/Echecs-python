@@ -6,7 +6,7 @@ def printgame(cells, cells_played, invert = False, clear_scr = True):
 	cell_played_a = case.xyToIndex(cells_played[0])
 	cell_played_b = case.xyToIndex(cells_played[1])
 
-	characters = " ♙♕♔♖♗♘"
+	characters = " PQKTFCâ™˜"
 
 	print(colored.fg(255), end="")
 	print(colored.bg(0), end="")
